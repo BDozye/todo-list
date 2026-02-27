@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Fonts-->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    /> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Playwrite+CU+Guides&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Yellowtail&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Font Awesome-->
+    <script
+      src="https://kit.fontawesome.com/7ec4e220ea.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--Main CSS-->
+    <link rel="stylesheet" href="styles.css" />
+    <title>TO-DO LIST</title>
+  </head>
+  <body>
+    <div class="todo__container">
+      <header class="todo__container--header">
+        <h1>TO-DO LIST</h1>
+      </header>
+
+      <section class="todo__container--input">
+        <label for="add-input">Add an item to your List:</label>
+        <input
+          type="text"
+          id="add-input"
+          placeholder="e.g Take out the trash"
+        />
+        <button class="add-btn">Add</button>
+      </section>
+
+      <section class="todo__container--body">
+        <header class="todo__container--body__header">
+          <h2>Dozie's TO-DO LIST</h2>
+        </header>
+
+        <ul class="todo__container--body__list">
+          <li>
+            <input type="checkbox" id="todo-1" />
+            <label for="todo-1">Buy groceries</label>
+            <button class="delete-btn">×</button>
+          </li>
+          <li>
+            <input type="checkbox" id="todo-2" />
+            <label for="todo-2">Make some sauce</label>
+            <button class="delete-btn">×</button>
+          </li>
+          <li>
+            <input type="checkbox" id="todo-3" />
+            <label for="todo-3">Finish my mid-term paper</label>
+            <button class="delete-btn">×</button>
+          </li>
+          <li>
+            <input type="checkbox" id="todo-4" />
+            <label for="todo-4">Clean the Living room</label>
+            <button class="delete-btn">×</button>
+          </li>
+          <li>
+            <input type="checkbox" id="todo-5" />
+            <label for="todo-5">Wash off the Dishes</label>
+            <button class="delete-btn">×</button>
+          </li>
+          <li>
+            <input type="checkbox" id="todo-6" />
+            <label for="todo-6">Mow the Lawn</label>
+            <button class="delete-btn">×</button>
+          </li>
+          <li>
+            <input type="checkbox" id="todo-7" />
+            <label for="todo-7">Pick up my clothes</label>
+            <button class="delete-btn">×</button>
+          </li>
+          <li>
+            <input type="checkbox" id="todo-8" />
+            <label for="todo-8">Study for my test</label>
+            <button class="delete-btn">×</button>
+          </li>
+        </ul>
+      </section>
+
+      <footer class="todo__container--footer">
+        <p id="progress">0 of 8 completed</p>
+      </footer>
+    </div>
+  </body>
+
+  <script src="script.js"></script>
+</html>
